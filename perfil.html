@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - AtletaConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-bold">AtletaConnect</h1>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-blue-200">Início</a>
+                    <a href="treinadores.html" class="hover:text-blue-200">Treinadores</a>
+                    <a href="feed.html" class="hover:text-blue-200">Feed</a>
+                    <a href="chat.html" class="hover:text-blue-200">Chat</a>
+                    <a href="perfil.html" class="hover:text-blue-200">Perfil</a>
+                </div>
+                <button id="menuBtn" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="index.html" class="block hover:text-blue-200">Início</a>
+                <a href="treinadores.html" class="block hover:text-blue-200">Treinadores</a>
+                <a href="feed.html" class="block hover:text-blue-200">Feed</a>
+                <a href="chat.html" class="block hover:text-blue-200">Chat</a>
+                <a href="perfil.html" class="block hover:text-blue-200">Perfil</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Profile Header -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-700 h-32"></div>
+            <div class="px-6 pb-6">
+                <div class="flex flex-col md:flex-row items-center md:items-end -mt-16 mb-4">
+                    <div class="bg-gray-300 w-32 h-32 rounded-full border-4 border-white flex items-center justify-center text-5xl font-bold text-gray-600 mb-4 md:mb-0 md:mr-6">
+                        CA
+                    </div>
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-3xl font-bold">Carlos Andrade</h2>
+                        <p class="text-gray-600">Atleta de Atletismo</p>
+                        <p class="text-gray-500 text-sm">São Paulo, SP</p>
+                    </div>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 mt-4 md:mt-0">
+                        Editar Perfil
+                    </button>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    Atleta dedicado com paixão por corrida e atletismo. Sempre buscando superar meus limites e alcançar novos objetivos. Treinando para minha primeira maratona! 🏃‍♂️
+                </p>
+                <div class="flex flex-wrap gap-4 text-sm">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <span>Membro desde Janeiro 2024</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <span>2 Treinadores</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="text-3xl font-bold text-blue-600 mb-2">45</div>
+                <div class="text-gray-600">Treinos</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="text-3xl font-bold text-green-600 mb-2">12</div>
+                <div class="text-gray-600">Conquistas</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="text-3xl font-bold text-orange-600 mb-2">3</div>
+                <div class="text-gray-600">Medalhas</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="text-3xl font-bold text-purple-600 mb-2">156</div>
+                <div class="text-gray-600">Seguidores</div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="bg-white rounded-lg shadow-md">
+            <div class="border-b">
+                <div class="flex">
+                    <button onclick="showTab('sobre')" id="tab-sobre" class="px-6 py-4 font-semibold border-b-2 border-blue-600 text-blue-600">
+                        Sobre
+                    </button>
+                    <button onclick="showTab('conquistas')" id="tab-conquistas" class="px-6 py-4 font-semibold text-gray-600 hover:text-blue-600">
+                        Conquistas
+                    </button>
+                    <button onclick="showTab('atividades')" id="tab-atividades" class="px-6 py-4 font-semibold text-gray-600 hover:text-blue-600">
+                        Atividades
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="p-6">
+                <!-- Sobre Tab -->
+                <div id="content-sobre">
+                    <h3 class="text-xl font-bold mb-4">Informações Pessoais</h3>
+                    <div class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-sm text-gray-600">Idade</label>
+                                <p class="font-semibold">19 anos</p>
+                            </div>
+                            <div>
+                                <label class="text-sm text-gray-600">Modalidade Principal</label>
+                                <p class="font-semibold">Atletismo - Corrida</p>
+                            </div>
+                            <div>
+                                <label class="text-sm text-gray-600">Nível</label>
+                                <p class="font-semibold">Intermediário</p>
+                            </div>
+                            <div>
+                                <label class="text-sm text-gray-600">Objetivo</label>
+                                <p class="font-semibold">Completar uma maratona</p>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-sm text-gray-600">Treinadores</label>
+                            <div class="flex gap-4 mt-2">
+                                <div class="flex items-center">
+                                    <div class="bg-red-500 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold mr-2">
+                                        RF
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-sm">Ricardo Ferreira</p>
+                                        <p class="text-xs text-gray-500">Atletismo</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold mr-2">
+                                        JC
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-sm">João Carlos Silva</p>
+                                        <p class="text-xs text-gray-500">Preparação Física</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conquistas Tab -->
+                <div id="content-conquistas" class="hidden">
+                    <h3 class="text-xl font-bold mb-4">Minhas Conquistas</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="border rounded-lg p-4 text-center">
+                            <div class="text-4xl mb-2">🥇</div>
+                            <h4 class="font-semibold mb-1">Primeira Medalha</h4>
+                            <p class="text-sm text-gray-600">Conquistada em 15/03/2024</p>
+                        </div>
+                        <div class="border rounded-lg p-4 text-center">
+                            <div class="text-4xl mb-2">🏃</div>
+                            <h4 class="font-semibold mb-1">10km Completos</h4>
+                            <p class="text-sm text-gray-600">Conquistada em 22/04/2024</p>
+                        </div>
+                        <div class="border rounded-lg p-4 text-center">
+                            <div class="text-4xl mb-2">💪</div>
+                            <h4 class="font-semibold mb-1">30 Dias Consecutivos</h4>
+                            <p class="text-sm text-gray-600">Conquistada em 10/05/2024</p>
+                        </div>
+                        <div class="border rounded-lg p-4 text-center">
+                            <div class="text-4xl mb-2">⭐</div>
+                            <h4 class="font-semibold mb-1">Melhor Tempo Pessoal</h4>
+                            <p class="text-sm text-gray-600">Conquistada em 18/06/2024</p>
+                        </div>
+                        <div class="border rounded-lg p-4 text-center">
+                            <div class="text-4xl mb-2">🎯</div>
+                            <h4 class="font-semibold mb-1">Meta Mensal Atingida</h4>
+                            <p class="text-sm text-gray-600">Conquistada em 30/06/2024</p>
+                        </div>
+                        <div class="border rounded-lg p-4 text-center">
+                            <div class="text-4xl mb-2">🔥</div>
+                            <h4 class="font-semibold mb-1">Sequência de Fogo</h4>
+                            <p class="text-sm text-gray-600">Conquistada em 15/07/2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atividades Tab -->
+                <div id="content-atividades" class="hidden">
+                    <h3 class="text-xl font-bold mb-4">Atividades Recentes</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-600 pl-4 py-2">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="font-semibold">Corrida Matinal</h4>
+                                <span class="text-sm text-gray-500">Hoje</span>
+                            </div>
+                            <p class="text-sm text-gray-600">10km em 52 minutos</p>
+                        </div>
+                        <div class="border-l-4 border-green-600 pl-4 py-2">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="font-semibold">Treino de Velocidade</h4>
+                                <span class="text-sm text-gray-500">Ontem</span>
+                            </div>
+                            <p class="text-sm text-gray-600">8x400m com intervalos</p>
+                        </div>
+                        <div class="border-l-4 border-orange-600 pl-4 py-2">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="font-semibold">Treino de Força</h4>
+                                <span class="text-sm text-gray-500">2 dias atrás</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Musculação - Membros inferiores</p>
+                        </div>
+                        <div class="border-l-4 border-purple-600 pl-4 py-2">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="font-semibold">Corrida Longa</h4>
+                                <span class="text-sm text-gray-500">3 dias atrás</span>
+                            </div>
+                            <p class="text-sm text-gray-600">15km em ritmo moderado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 AtletaConnect. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function showTab(tabName) {
+            // Hide all content
+            document.getElementById('content-sobre').classList.add('hidden');
+            document.getElementById('content-conquistas').classList.add('hidden');
+            document.getElementById('content-atividades').classList.add('hidden');
+
+            // Remove active state from all tabs
+            document.getElementById('tab-sobre').className = 'px-6 py-4 font-semibold text-gray-600 hover:text-blue-600';
+            document.getElementById('tab-conquistas').className = 'px-6 py-4 font-semibold text-gray-600 hover:text-blue-600';
+            document.getElementById('tab-atividades').className = 'px-6 py-4 font-semibold text-gray-600 hover:text-blue-600';
+
+            // Show selected content and activate tab
+            document.getElementById('content-' + tabName).classList.remove('hidden');
+            document.getElementById('tab-' + tabName).className = 'px-6 py-4 font-semibold border-b-2 border-blue-600 text-blue-600';
+        }
+    </script>
+</body>
+</html>

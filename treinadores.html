@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinadores - AtletaConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-bold">AtletaConnect</h1>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-blue-200">Início</a>
+                    <a href="treinadores.html" class="hover:text-blue-200">Treinadores</a>
+                    <a href="feed.html" class="hover:text-blue-200">Feed</a>
+                    <a href="chat.html" class="hover:text-blue-200">Chat</a>
+                    <a href="perfil.html" class="hover:text-blue-200">Perfil</a>
+                </div>
+                <button id="menuBtn" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="index.html" class="block hover:text-blue-200">Início</a>
+                <a href="treinadores.html" class="block hover:text-blue-200">Treinadores</a>
+                <a href="feed.html" class="block hover:text-blue-200">Feed</a>
+                <a href="chat.html" class="block hover:text-blue-200">Chat</a>
+                <a href="perfil.html" class="block hover:text-blue-200">Perfil</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold mb-6">Encontre Seu Treinador</h2>
+        
+        <!-- Search Bar -->
+        <div class="bg-white p-4 rounded-lg shadow-md mb-8">
+            <div class="flex flex-col md:flex-row gap-4">
+                <input type="text" placeholder="Buscar por nome..." class="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option>Todas as Modalidades</option>
+                    <option>Futebol</option>
+                    <option>Basquete</option>
+                    <option>Vôlei</option>
+                    <option>Natação</option>
+                    <option>Atletismo</option>
+                </select>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Buscar</button>
+            </div>
+        </div>
+
+        <!-- Trainers Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Trainer Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-blue-500 h-32"></div>
+                <div class="p-6 -mt-16">
+                    <div class="bg-gray-300 w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-gray-600">
+                        JC
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">João Carlos Silva</h3>
+                    <p class="text-center text-gray-600 mb-4">Treinador de Futebol</p>
+                    <div class="flex items-center justify-center mb-4">
+                        <span class="text-yellow-500">★★★★★</span>
+                        <span class="ml-2 text-gray-600">(4.9)</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">15 anos de experiência | São Paulo, SP</p>
+                    <a href="chat.html" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700">
+                        Enviar Mensagem
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trainer Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-green-500 h-32"></div>
+                <div class="p-6 -mt-16">
+                    <div class="bg-gray-300 w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-gray-600">
+                        MS
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Maria Santos</h3>
+                    <p class="text-center text-gray-600 mb-4">Treinadora de Natação</p>
+                    <div class="flex items-center justify-center mb-4">
+                        <span class="text-yellow-500">★★★★★</span>
+                        <span class="ml-2 text-gray-600">(5.0)</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">10 anos de experiência | Rio de Janeiro, RJ</p>
+                    <a href="chat.html" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700">
+                        Enviar Mensagem
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trainer Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-orange-500 h-32"></div>
+                <div class="p-6 -mt-16">
+                    <div class="bg-gray-300 w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-gray-600">
+                        PA
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Pedro Almeida</h3>
+                    <p class="text-center text-gray-600 mb-4">Treinador de Basquete</p>
+                    <div class="flex items-center justify-center mb-4">
+                        <span class="text-yellow-500">★★★★☆</span>
+                        <span class="ml-2 text-gray-600">(4.7)</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">8 anos de experiência | Belo Horizonte, MG</p>
+                    <a href="chat.html" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700">
+                        Enviar Mensagem
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trainer Card 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-purple-500 h-32"></div>
+                <div class="p-6 -mt-16">
+                    <div class="bg-gray-300 w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-gray-600">
+                        AC
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Ana Costa</h3>
+                    <p class="text-center text-gray-600 mb-4">Treinadora de Vôlei</p>
+                    <div class="flex items-center justify-center mb-4">
+                        <span class="text-yellow-500">★★★★★</span>
+                        <span class="ml-2 text-gray-600">(4.8)</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">12 anos de experiência | Curitiba, PR</p>
+                    <a href="chat.html" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700">
+                        Enviar Mensagem
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trainer Card 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-red-500 h-32"></div>
+                <div class="p-6 -mt-16">
+                    <div class="bg-gray-300 w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-gray-600">
+                        RF
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Ricardo Ferreira</h3>
+                    <p class="text-center text-gray-600 mb-4">Treinador de Atletismo</p>
+                    <div class="flex items-center justify-center mb-4">
+                        <span class="text-yellow-500">★★★★★</span>
+                        <span class="ml-2 text-gray-600">(4.9)</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">20 anos de experiência | Porto Alegre, RS</p>
+                    <a href="chat.html" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700">
+                        Enviar Mensagem
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trainer Card 6 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-teal-500 h-32"></div>
+                <div class="p-6 -mt-16">
+                    <div class="bg-gray-300 w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-gray-600">
+                        LM
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Lucas Martins</h3>
+                    <p class="text-center text-gray-600 mb-4">Treinador de Futebol</p>
+                    <div class="flex items-center justify-center mb-4">
+                        <span class="text-yellow-500">★★★★☆</span>
+                        <span class="ml-2 text-gray-600">(4.6)</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">7 anos de experiência | Salvador, BA</p>
+                    <a href="chat.html" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700">
+                        Enviar Mensagem
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 AtletaConnect. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
